@@ -1,0 +1,48 @@
+{
+  "name": "is-camera-on",
+  "version": "0.0.0",
+  "description": "Check if the built-in Mac camera is on",
+  "license": "MIT",
+  "repository": "sindresorhus/node-is-camera-on",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "build": "swift build --configuration=release -Xswiftc -static-stdlib -Xswiftc -target -Xswiftc x86_64-apple-macosx10.11",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "index.js",
+    ".build/release/main"
+  ],
+  "keywords": [
+    "macos",
+    "camera",
+    "webcam",
+    "cam",
+    "builtin",
+    "built-in",
+    "internal",
+    "status",
+    "on",
+    "off",
+    "enabled",
+    "disabled",
+    "used",
+    "swift"
+  ],
+  "dependencies": {
+    "execa": "^0.6.0",
+    "macos-version": "^4.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
