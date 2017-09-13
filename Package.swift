@@ -1,9 +1,17 @@
-// swift-tools-version:3.1
+// swift-tools-version:4.0
 import PackageDescription
 
 let package = Package(
 	name: "main",
 	dependencies: [
-		.Package(url: "https://github.com/sindresorhus/is-camera-on", majorVersion: 1)
+		.package(url: "https://github.com/sindresorhus/is-camera-on", from: "2.0.1")
+	],
+	targets: [
+		.target(
+			name: "main",
+			dependencies: [
+				"IsCameraOn"
+			]
+		)
 	]
 )

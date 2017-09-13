@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IsCameraOn",
+        "repositoryURL": "https://github.com/sindresorhus/is-camera-on",
+        "state": {
+          "branch": null,
+          "revision": "93424ab8bc6d419bc0efbedf6ae2d347e3f4e3b8",
+          "version": "2.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
