@@ -5,7 +5,7 @@ const execa = require('execa');
 
 const bin = path.join(__dirname, 'main');
 
-module.exports = () => Promise.resolve().then(() => {
+module.exports = async () => {
 	macosVersion.assertGreaterThanOrEqualTo('10.11');
-	return execa.stdout(bin).then(x => x === 'true');
-});
+	return (await execa.stdout(bin)) === 'true';
+};
