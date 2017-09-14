@@ -17,10 +17,10 @@ Requires macOS 10.11 or later.
 ```js
 const isCameraOn = require('is-camera-on');
 
-isCameraOn().then(isOn => {
-	console.log(isOn);
+(async () => {
+	console.log(await isCameraOn());
 	//=> true
-});
+})();
 ```
 
 

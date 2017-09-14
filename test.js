@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from '.';
+import isCameraOn from '.';
 
-test(async t => {
-	const isOn = await m();
+test('main', async t => {
+	const isOn = await isCameraOn();
 	t.is(typeof isOn, 'boolean');
 	console.log(`Camera is ${isOn ? 'on' : 'off'}`);
 });

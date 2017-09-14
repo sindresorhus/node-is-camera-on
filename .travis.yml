@@ -1,6 +1,7 @@
-language: objective-c
-osx_image: xcode8.3
+language: swift
+osx_image: xcode10.1
 script:
+  - nvm install node
   - npm run build
   - npm install
   - npm test

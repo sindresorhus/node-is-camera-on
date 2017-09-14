@@ -14,7 +14,7 @@
 	},
 	"scripts": {
 		"test": "xo && ava",
-		"build": "swift build --configuration=release -Xswiftc -static-stdlib -Xswiftc -target -Xswiftc x86_64-apple-macosx10.11 && mv .build/release/main .",
+		"build": "swift build --configuration=release --static-swift-stdlib -Xswiftc -target -Xswiftc x86_64-apple-macosx10.11 && mv .build/release/main .",
 		"prepublish": "npm run build"
 	},
 	"files": [
@@ -42,7 +42,7 @@
 		"macos-version": "^4.0.1"
 	},
 	"devDependencies": {
-		"ava": "*",
-		"xo": "*"
+		"ava": "^1.2.1",
+		"xo": "^0.24.0"
 	}
 }
