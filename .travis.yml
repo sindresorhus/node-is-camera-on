@@ -1,7 +1,0 @@
-language: swift
-osx_image: xcode10.2
-script:
-  - nvm install node
-  - npm run build
-  - npm install
-  - npm test

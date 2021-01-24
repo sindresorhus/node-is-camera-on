@@ -4,18 +4,19 @@
 	"description": "Check if the built-in Mac camera is on",
 	"license": "MIT",
 	"repository": "sindresorhus/node-is-camera-on",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
 		"test": "xo && ava",
-		"build": "swift build --configuration=release --static-swift-stdlib -Xswiftc -target -Xswiftc x86_64-apple-macosx10.11 && mv .build/release/main .",
-		"prepublish": "npm run build"
+		"build": "swift build --configuration=release && mv .build/release/main .",
+		"prepare": "npm run build"
 	},
 	"files": [
 		"index.js",
