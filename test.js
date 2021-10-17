@@ -1,5 +1,5 @@
 import test from 'ava';
-import isCameraOn from '.';
+import isCameraOn from './index.js';
 
 test('main', async t => {
 	const isOn = await isCameraOn();

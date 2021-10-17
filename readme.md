@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install is-camera-on
+```sh
+npm install is-camera-on
 ```
 
 Requires macOS 10.11 or later.
